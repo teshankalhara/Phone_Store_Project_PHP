@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box !important;
+}
+
+body {
+  overflow-x: none;
+}
+
+html {
+  overflow-x: none;
+  scroll-behavior: smooth;
+  scroll-padding-top: 1rem;
+}
+
+html::-webkit-scrollbar {
+  width: 4px;
+}
+
+html::-webkit-scrollbar-track {
+  background: rgb(8, 11, 32, 0.1);
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #343a40 !important;
+  border-radius: 0;
+}
+
+#pageno:hover {
+  color: black !important;
+}
