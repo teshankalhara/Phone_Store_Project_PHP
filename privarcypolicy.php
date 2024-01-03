@@ -25,6 +25,9 @@ session_start();
     <!--header-->
 
     <!--content-->
+    <div class="container container-fluid p-5">
+        <h2>Privacy Policy Page</h2>
+    </div>
     <!--content-->
 
     <!--footer-->
