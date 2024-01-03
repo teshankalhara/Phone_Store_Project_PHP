@@ -43,9 +43,11 @@
       </div>
       <div class="col-md-6 col-lg-3">
         <h5 class="text-white mb-4">Our Products</h5>
-        <a class="btn btn-link" href="">iPhones</a>
-        <a class="btn btn-link" href="">iPads</a>
-        <a class="btn btn-link" href="">AirPods</a>
+        <span class="btn btn-link" style="cursor:default !important;">iPhones</span>
+        <span class="btn btn-link" hstyle="cursor:default !important;">EarBuds</span>
+        <span class="btn btn-link" style="cursor:default !important;">Cables</span>
+        <span class="btn btn-link" style="cursor:default !important;">Chargers</span>
+        <span class="btn btn-link" style="cursor:default !important;">Power Banks</span>
       </div>
     </div>
   </div>
