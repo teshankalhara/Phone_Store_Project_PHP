@@ -25,6 +25,9 @@ session_start();
     <!--header-->
 
     <!--content-->
+    <div class="container container-fluid p-5">
+        <h2>Contact Us Page</h2>
+    </div>
     <!--content-->
 
     <!--footer-->
