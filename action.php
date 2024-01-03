@@ -50,7 +50,7 @@ if (isset($_POST['page'])) {
     $sql = "SELECT * FROM products";
     $run_query = mysqli_query($conn, $sql);
     $count = mysqli_num_rows($run_query);
-    $pageno = ceil($count / 18);
+    $pageno = ceil($count / 12);
     for ($i = 1; $i <= $pageno; $i++) {
         echo "<li class='page-item text-center'><a href='#' class='page page-link' page='$i'>$i</a></li>";
     }
@@ -59,7 +59,7 @@ if (isset($_POST['page'])) {
 
 #display products
 if (isset($_POST['getProduct'])) {
-    $limit = 18;
+    $limit = 12;
 
     $pageno = (isset($_POST['setPage'])) ? $_POST['pageNumber'] : 1;
 
