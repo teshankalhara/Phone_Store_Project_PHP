@@ -20,6 +20,8 @@ if (!isset($_SESSION['uid'])) {
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/body.css" rel="stylesheet">
     <link href="css/body.css" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 </head>
 
 <body>
@@ -91,7 +93,7 @@ if (!isset($_SESSION['uid'])) {
     <!--content-->
     <div class="container-fluid mt-2">
         <div class="row">
-            <div class="col-md-2">
+            <div class="col-md-2" id="myElement">
                 <div id="get_cat">
                     <!--types of categories-->
                 </div>
@@ -128,6 +130,16 @@ if (!isset($_SESSION['uid'])) {
                 </div>
             </div>
         </div>
+
+        <!--click filter hide pagination num-->
+        <script>
+                $(document).ready(function() {
+                    $("#myElement").click(function() {
+                        $("#pageno").hide();
+                    });
+                });
+        </script>
+        <!--click filter hide pagination num-->
 
         <br>
 
