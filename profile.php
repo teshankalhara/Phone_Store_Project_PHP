@@ -46,7 +46,7 @@ if (!isset($_SESSION['uid'])) {
                     <a id="carticon" href="#" class="dropdown-toggle" data-toggle="dropdown">
                         <i class="fa fa-shopping-cart"></i>
                         Cart
-                        <span class="badge" style='font-size:medium;'>2</span>
+                        <span class="badge" style='font-size:medium;'>0</span>
                     </a>
                     <div class="dropdown-menu mt-1 p-3 bg-dark border-2 border-white mt-3" style="width: 400px;">
                         <div class="panel panel-success">
@@ -77,7 +77,7 @@ if (!isset($_SESSION['uid'])) {
                                 Cart
                             </a>
                         </div>
-                        <div><a href="#">Change Password</a></div>
+                        <div><a href="changepassword.php">Change Password</a></div>
                         <div class="text-center">
                             <a href="logout.php">
                                 <button type="button" class="btn btn-outline-danger m-2"><b>Logout</b></button>
