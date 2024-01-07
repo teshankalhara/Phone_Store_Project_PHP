@@ -134,7 +134,7 @@ if (isset($_POST['get_selected_Category']) || isset($_POST['get_selected_brand']
 
         echo "<div class='col-12 col-md-6 col-lg-4 mb-2'>
                     <div class='card card-info'>
-                        <div class='card-header'>$title</div>
+                        <div class='card-header text-center'><b>$title</b></div>
                         <div class='card-body mb-0 text-center'>
                             <a href='#' class='imageproduct text-center' pid='$pro_id'>
                                 <img src='assets/prod_images/$img' class='card-img-top text-center img-fluid' alt='Product Image' style='width:200px; height:200px;'>
