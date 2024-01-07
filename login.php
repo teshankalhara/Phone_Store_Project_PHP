@@ -5,7 +5,7 @@
 	if(isset($_POST['userLogin'])){
 
 		$email=mysqli_real_escape_string($conn,$_POST['email']);
-		$pwd=md5($_POST['pwd']);
+		$pwd=$_POST['pwd'];
 		$sql="SELECT * FROM user_info WHERE email='$email' AND password='$pwd'";
 		$run_query=mysqli_query($conn,$sql);
 		$count=mysqli_num_rows($run_query);
