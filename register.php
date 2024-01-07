@@ -5,7 +5,7 @@ include('config.php');
 $f_name = $_POST['f_name'];
 $l_name = $_POST['l_name'];
 $email = $_POST['email'];
-$password = md5($_POST['password']);
+$password = $_POST['password'];
 $mobile = $_POST['mobile'];
 $address1 = $_POST['address1'];
 $address2 = $_POST['address2'];
