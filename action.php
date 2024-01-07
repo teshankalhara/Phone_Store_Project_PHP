@@ -208,7 +208,7 @@ if (isset($_POST['cartmenu']) || isset($_POST['cart_checkout'])) {
     $sql = "SELECT * FROM cart WHERE user_id='$uid'";
     $run_query = mysqli_query($conn, $sql);
     $count = mysqli_num_rows($run_query);
-    $_SESSION['totalPrice']=0;;
+    $_SESSION['totalPrice'] = 0;
     if ($count > 0) {
         $i = 1;
         $total_amt = 0;
