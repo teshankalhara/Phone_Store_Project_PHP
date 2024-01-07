@@ -60,29 +60,29 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <label for="f_name">First Name</label>
-                                    <input type="text" id="f_name" name="f_name" class="form-control" required>
+                                    <input type="text" id="f_name" name="f_name" class="form-control">
                                 </div>
                                 <div class="col-md-6">
                                     <label for="f_name">Last Name</label>
-                                    <input type="text" id="l_name" name="l_name" class="form-control" required>
+                                    <input type="text" id="l_name" name="l_name" class="form-control">
                                 </div>
                             </div>
 
                             <div class="row">
                                 <div class="col-md-6">
                                     <label for="email">Email</label>
-                                    <input type="text" id="email" name="email" class="form-control" required>
+                                    <input type="text" id="email" name="email" class="form-control">
                                 </div>
                                 <div class="col-md-6">
                                     <label for="password">Password</label>
-                                    <input type="password" id="password" name="password" class="form-control" required>
+                                    <input type="password" id="password" name="password" class="form-control">
                                 </div>
                             </div>
 
                             <div class="row">
                                 <div class="col-md-6">
                                     <label for="mobile">Mobile</label>
-                                    <input type="text" id="mobile" name="mobile" class="form-control" maxlength="10" required>
+                                    <input type="text" id="mobile" name="mobile" class="form-control" maxlength="10">
                                 </div>
                                 <div class="col-md-6"></div>
                             </div>
@@ -90,20 +90,20 @@
                             <div class="row">
                                 <div class="col-md-12">
                                     <label for="address1">Address #1</label>
-                                    <input type="textarea" id="address1" name="address1" class="form-control" required>
+                                    <input type="text" id="address1" name="address1" class="form-control">
                                 </div>
                             </div>
 
                             <div class="row">
                                 <div class="col-md-12">
                                     <label for="address2">Address #2</label>
-                                    <input type="textarea" id="address2" name="address2" class="form-control" required>
+                                    <input type="text" id="address2" name="address2" class="form-control">
                                 </div>
                             </div>
 
                             <br><br>
                             <div class="text-center">
-                                <input type="submit" class="w-100 btn btn-primary" value="Sign Up" name="signup" id="signup_btn" style="font-weight:500;">
+                                <input type="button" class="w-100 btn btn-primary" value="Sign Up" name="signup" id="signup_btn" style="font-weight:500;">
                             </div>
                         </div>
                     </form>
