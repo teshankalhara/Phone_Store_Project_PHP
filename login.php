@@ -15,8 +15,9 @@
 				$_SESSION['uid']=$row['user_id'];
 				$_SESSION['uname']=$row['first_name'];
 				echo "true";
-		}
-			
+		}	
+	}else{
+		echo"<script>alert('Check Email or Password!!');</script>";
 	}
 
  ?>
