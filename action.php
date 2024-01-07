@@ -148,8 +148,7 @@ if (isset($_POST['get_selected_Category']) || isset($_POST['get_selected_brand']
                             </div>
                         </div>
                     </div>
-                </div>";
-                
+                </div>"; 
     }
 }
 
