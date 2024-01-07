@@ -133,11 +133,11 @@ if (!isset($_SESSION['uid'])) {
 
         <!--click filter hide pagination num-->
         <script>
-                $(document).ready(function() {
-                    $("#myElement, #search").click(function() {
-                        $("#pageno").hide();
-                    });
+            $(document).ready(function() {
+                $("#myElement,#search, #price_sort, #pop_sort").click(function() {
+                    $("#pageno").hide();
                 });
+            });
         </script>
         <!--click filter hide pagination num-->
 
