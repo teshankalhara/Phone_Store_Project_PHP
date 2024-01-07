@@ -1,5 +1,6 @@
 <?php
 session_start();
+$user_id = $_SESSION['uid'];
 require_once('config.php');
 ?>
 
@@ -34,11 +35,9 @@ require_once('config.php');
                     <li class="mr-4"><a href="services.php" class="nav-link px-2 text-white">Service</a></li>
                     <li class="mr-4"><a href="aboutus.php" class="nav-link px-2 text-white">About</a></li>
                     <li class="mr-4"><a href="faqs.php" class="nav-link px-2 text-white">FAQs</a></li>
-                    <li class="ml-2 bg-dark text-white-50" style="width:250px;"><input type="text" class="form-control bg-dark text-white" id="search" name="" placeholder="Type to search..." style="border-top-left-radius: 10px; border-bottom-left-radius: 10px; border-top-right-radius: 0px;border-bottom-right-radius: 0px; border:1px solid #3B71CA; font-size:medium;"></li>
-                    <li style="top:10px;"><button class="btn btn-primary" id="search_btn" name="" style="border-top-left-radius: 0px; border-bottom-left-radius: 0px; "><i class="fa fa-search"></i></button></li>
                 </ul>
 
-                <div id='shoppingcart' class="mr-4">
+                <div id='shoppingcart' class="ml-4 mr-4">
                     <a id="carticon" href="#" class="dropdown-toggle" data-toggle="dropdown">
                         <i class="fa fa-shopping-cart"></i>
                         Cart
@@ -88,30 +87,59 @@ require_once('config.php');
 
     <!--content-->
     <div class="container container-fluid p-5">
-        <div class="p-3">
+        <?php
+        if (isset($_POST['passwordchange'])) {
+            $currentPassword = $_POST['currentpassword'];
+            $newPassword = $_POST['newpassword'];
+            $confirmPassword = $_POST['confirmpassword'];
+
+
+            $sqlOldPassword = "SELECT password FROM user_info WHERE user_id = '$user_id' AND password= '$currentPassword'";
+            $oldPassword = mysqli_query($conn, $sqlOldPassword);
+
+            if ($oldPassword) {
+                if ($confirmPassword == $newPassword) {
+                    $sqlUpdate = "UPDATE user_info SET password = '$newPassword' WHERE password = '$currentPassword' AND user_id = '$user_id'";
+                    $result = mysqli_query($conn, $sqlUpdate);
+                    if ($result) {
+                        echo "<script>alert('Password Change OK!');</script>";
+                    }
+                } else {
+                    echo "<script>alert('Current Password Not Matching!!Check Current Password');</script>";
+                }
+            } else {
+                echo "<script>alert('Current Password Check!!');</script>";
+            }
+        }
+        ?>
+        <form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="POST" class="p-3">
             <div class='card card-info'>
                 <div class='card-header text-center text-center'>
                     <h4>Change Password</h4>
                 </div>
                 <div class='card-body mb-0 text-center'>
                     <div class="row pl-2 pr-2">
-                        <div class="col-md-6">
+                        <div class="col-md-4">
                             <label for="currentpassword">Current Password</label>
-                            <input type="password" id="currentpassword" name="currentpassword" class="form-control">
+                            <input type="password" id="currentpassword" name="currentpassword" class="form-control" required>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-4">
                             <label for="newpassword">New Password</label>
-                            <input type="password" id="newpassword" name="newpassword" class="form-control">
+                            <input type="password" id="newpassword" name="newpassword" class="form-control" minlength="8" required>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="confirmpassword">Confirm Password</label>
+                            <input type="password" id="confirmpassword" name="confirmpassword" class="form-control" minlength="8" required>
                         </div>
                     </div>
                 </div>
                 <div class='card-footer'>
                     <div class='text-center mt-1'>
-                        <button pid='$pro_id' class='product btn btn-outline-success btn-sm'><b>Confirm</b></button>
+                        <input type="submit" class="btn btn-outline-success btn-sm" value="Confirm" name="passwordchange" id="passwordchange_btn" style="font-weight:500;">
                     </div>
                 </div>
             </div>
-        </div>
+        </form>
     </div>
     <!--content-->
 
