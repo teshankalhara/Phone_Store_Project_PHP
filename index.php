@@ -41,10 +41,10 @@ if (isset($_SESSION['uid'])) {
                     <li class="mr-4"><a href="services.php" class="nav-link px-2 text-white">Service</a></li>
                     <li class="mr-4"><a href="aboutus.php" class="nav-link px-2 text-white">About</a></li>
                     <li class="mr-4"><a href="faqs.php" class="nav-link px-2 text-white">FAQs</a></li>
-                    <li class="ml-2 bg-dark" style="width:250px;"><input type="text" class="form-control bg-dark text-white-50" id="search" name="" placeholder="Type to search..." style="border-top-left-radius: 10px; border-bottom-left-radius: 10px; border-top-right-radius: 0px;border-bottom-right-radius: 0px; border:1px solid #3B71CA; font-size:medium;"></li>
+                    <li class="ml-2 bg-dark" style="width:250px;"><input type="text" class="form-control bg-dark text-white-50" id="search" name="search" placeholder="Type to search..." style="border-top-left-radius: 10px; border-bottom-left-radius: 10px; border-top-right-radius: 0px;border-bottom-right-radius: 0px; border:1px solid #3B71CA; font-size:medium;"></li>
                     <li style="top:10px;"><button class="btn btn-outline-primary" id="search_btn" name="" style="border-top-left-radius: 0px;border-bottom-left-radius: 0px;"><i class="fa fa-search"></i></button></li>
                 </ul>
-
+                <!--login form-->
                 <div class="text-end ml-lg-4">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sign In</a>
                     <div class="dropdown-menu bg-dark border-1 border-white mt-3">
@@ -57,7 +57,7 @@ if (isset($_SESSION['uid'])) {
                                     <input type="email" class="form-control m-1" id="email" placeholder="Email">
                                     <input type="password" class="form-control m-1" id="password" placeholder="Password">
                                     <p><br></p>
-                                    <input type="submit" class="btn btn-outline-primary mb-1" id="login" value="Login" name="">
+                                    <input type="submit" class="btn btn-outline-primary mb-1" id="login" value="Login" name="userLogin">
                                     <div>
                                         <a href="#">Forgot Password?</a>
                                     </div>
@@ -67,10 +67,13 @@ if (isset($_SESSION['uid'])) {
                         </div>
                     </div>
                 </div>
+                <!--login form-->
 
+                <!--signup form-->
                 <div class="text-end ml-lg-2">
                     <a href="signup.php"><button type="button" class="btn btn-outline-primary ml-lg-4">Sign-up</button></a>
                 </div>
+                <!--signup form-->
             </div>
         </div>
     </header>
