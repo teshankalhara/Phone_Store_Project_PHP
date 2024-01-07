@@ -118,7 +118,7 @@ if (isset($_POST['get_selected_Category']) || isset($_POST['get_selected_brand']
         }
     } elseif (isset($_POST['search'])) {
         $keyword = $_POST['keyword'];
-        $sql = "SELECT * FROM products WHERE product_keywords LIKE '%$keyword%'";
+        $sql = "SELECT * FROM products WHERE product_keywords LIKE '%$keyword%' OR product_title LIKE '%$keyword%'" ;
         if (isset($_POST['price_sorted'])) {
             $sql = "SELECT * FROM products ORDER BY product_price";
         }
