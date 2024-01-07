@@ -124,8 +124,6 @@ if (!isset($_SESSION['uid'])) {
                         </div>
                     </div>
 
-
-
                     <div class="card-footer">
                         <?php if ($_SESSION['totalPrice'] > 0) { ?>
                             <button class='btn btn-outline-success btn-lg float-end mt-1 mb-1' id='checkout_btn' data-toggle="modal" data-target="#myModal">
