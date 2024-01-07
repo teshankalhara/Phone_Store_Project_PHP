@@ -11,7 +11,7 @@
 
       <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0 mr-4 ml-4">
         <li class="mr-4"><a href="index.php" class="nav-link px-2 text-white">Home</a></li>
-        <li class="mr-4"><a href="index.php" class="nav-link px-2 text-white">Service</a></li>
+        <li class="mr-4"><a href="services.php" class="nav-link px-2 text-white">Service</a></li>
         <li class="mr-4"><a href="aboutus.php" class="nav-link px-2 text-white">About</a></li>
         <li class="mr-4"><a href="faqs.php" class="nav-link px-2 text-white">FAQs</a></li>
       </ul>
