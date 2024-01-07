@@ -107,23 +107,29 @@ if (isset($_POST['getProduct'])) {
 #display products
 
 if (isset($_POST['get_selected_Category']) || isset($_POST['get_selected_brand']) || isset($_POST['search']) || isset($_POST['price_sorted'])) {
+    $SQl="SELECT * FROM products";
     if (isset($_POST['get_selected_Category'])) {
         $cid = $_POST['cat_id'];
         $sql = "SELECT * FROM products WHERE product_cat=$cid";
+        $SQl = $sql;
     } elseif (isset($_POST['get_selected_brand'])) {
         $bid = $_POST['brand_id'];
         $sql = "SELECT * FROM products WHERE product_brand=$bid";
+        $SQl = $sql;
         if (isset($_POST['price_sorted'])) {
             $sql = "SELECT * FROM products ORDER BY product_price";
+            $SQl = $sql;
         }
     } elseif (isset($_POST['search'])) {
         $keyword = $_POST['keyword'];
         $sql = "SELECT * FROM products WHERE product_keywords LIKE '%$keyword%' OR product_title LIKE '%$keyword%'" ;
+        $SQl = $sql;
         if (isset($_POST['price_sorted'])) {
             $sql = "SELECT * FROM products ORDER BY product_price";
+            $SQl = $sql;
         }
     }
-    $run_query = mysqli_query($conn, $sql);
+    $run_query = mysqli_query($conn, $SQl);
     while ($row = mysqli_fetch_array($run_query)) {
         $pro_id = $row['product_id'];
         $pro_cat = $row['product_cat'];
