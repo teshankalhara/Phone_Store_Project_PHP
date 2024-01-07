@@ -1,5 +1,6 @@
 <?php
 session_start();
+require_once('config.php');
 if (!isset($_SESSION['uid'])) {
     header('Location:index.php');
 }
@@ -12,7 +13,7 @@ if (!isset($_SESSION['uid'])) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
     <link rel="icon" type="image/x-icon" href="pic/logo.jpg">
-    
+
     <title>Apple.Mobile</title>
 
     <link href="img/favicon.ico" rel="icon">
@@ -30,13 +31,13 @@ if (!isset($_SESSION['uid'])) {
     <header class="p-3 bg-dark sticky-top">
         <div class="container container-fluid">
             <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start ml-4">
-                <a href="#" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none ml-4 mr-4">
+                <a href="index.php" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none ml-4 mr-4">
                     <b>Apple.Mobiles</b>
                 </a>
 
                 <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0 mr-2 ml-4">
                     <li class="mr-4"><a href="index.php" class="nav-link px-2 text-white">Home</a></li>
-                    <li class="mr-4"><a href="index.php" class="nav-link px-2 text-white">Service</a></li>
+                    <li class="mr-4"><a href="services.php" class="nav-link px-2 text-white">Service</a></li>
                     <li class="mr-4"><a href="aboutus.php" class="nav-link px-2 text-white">About</a></li>
                     <li class="mr-4"><a href="faqs.php" class="nav-link px-2 text-white">FAQs</a></li>
                     <!--
@@ -63,8 +64,8 @@ if (!isset($_SESSION['uid'])) {
                                 </div>
                                 <hr>
                                 <div class="text-white-50" id="cartmenu">
-                                    <?php 
-                                        #adding items on cart
+                                    <?php
+                                    #adding items on cart
                                     ?>
                                 </div>
                             </div>
@@ -122,10 +123,15 @@ if (!isset($_SESSION['uid'])) {
                             <!-- total price -->
                         </div>
                     </div>
+
+
+
                     <div class="card-footer">
-                        <button class='btn btn-outline-success btn-lg float-end mt-1 mb-1' id='checkout_btn' data-toggle="modal" data-target="#myModal">
-                            <span style="font-weight: bold;">Checkout</span>
-                        </button>
+                        <?php if ($_SESSION['totalPrice'] > 0) { ?>
+                            <button class='btn btn-outline-success btn-lg float-end mt-1 mb-1' id='checkout_btn' data-toggle="modal" data-target="#myModal">
+                                <span style="font-weight: bold;">Checkout</span>
+                            </button>
+                        <?php } ?>
                     </div>
                 </div>
             </div>
