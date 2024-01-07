@@ -95,7 +95,7 @@ if (isset($_SESSION['uid'])) {
             <div class="col">
                 <div class="row">
                     <div class="col-md-12" id="cartmsg">
-
+                        <!--adding msg-->
                     </div>
                 </div>
                 <div class="card">
