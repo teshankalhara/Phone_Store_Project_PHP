@@ -7,20 +7,20 @@ if (isset($_POST["category"])) {
     $run_query = mysqli_query($conn, $category_query);
 
     echo "<div class='nav flex-column nav-pills'>";
-    echo "<li class='nav-item'>
-            <a class='nav-link active' href='#'><h4>Categories</h4></a>
-        </li>";
+        echo "<li class='nav-item'>
+                <a class='nav-link active' href='#'><h4>Categories</h4></a>
+            </li>";
 
-    if (mysqli_num_rows($run_query)) {
-        while ($row = mysqli_fetch_array($run_query)) {
-            $cid = $row['cat_id'];
-            $cat_name = $row['cat_title'];
+        if (mysqli_num_rows($run_query)) {
+            while ($row = mysqli_fetch_array($run_query)) {
+                $cid = $row['cat_id'];
+                $cat_name = $row['cat_title'];
 
-            echo "<li class='nav-item'>
-                    <a href='#' class='nav-link category' cid='$cid'>$cat_name</a>
-                </li>";
+                echo "<li class='nav-item'>
+                        <a href='#' class='nav-link category' cid='$cid'>$cat_name</a>
+                    </li>";
+            }
         }
-    }
     echo "</div>";
 }
 
@@ -202,6 +202,7 @@ if (isset($_POST['cartmenu']) || isset($_POST['cart_checkout'])) {
     $sql = "SELECT * FROM cart WHERE user_id='$uid'";
     $run_query = mysqli_query($conn, $sql);
     $count = mysqli_num_rows($run_query);
+    $_SESSION['totalPrice']=0;;
     if ($count > 0) {
         $i = 1;
         $total_amt = 0;
@@ -216,6 +217,7 @@ if (isset($_POST['cartmenu']) || isset($_POST['cart_checkout'])) {
             $price_array = array($total);
             $total_sum = array_sum($price_array);
             $total_amt += $total_sum;
+            $_SESSION['totalPrice']=$total_amt;
 
             if (isset($_POST['cartmenu'])) {
                 echo "<div class='row'>
