@@ -120,7 +120,7 @@ if (isset($_SESSION['uid'])) {
         <!--click filter hide pagination num-->
         <script>
                 $(document).ready(function() {
-                    $("#myElement").click(function() {
+                    $("#myElement,#search").click(function() {
                         $("#pageno").hide();
                     });
                 });
