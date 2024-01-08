@@ -59,7 +59,7 @@ if (isset($_SESSION['uid'])) {
                                     <p><br></p>
                                     <input type="submit" class="btn btn-outline-primary mb-1" id="login" value="Login" name="">
                                     <div>
-                                        <a href="#">Forgot Password?</a>
+                                        <!--<a href="#">Forgot Password?</a>-->
                                     </div>
                                 </div>
                                 <div class="panel-footer" id="e_msg"></div>
