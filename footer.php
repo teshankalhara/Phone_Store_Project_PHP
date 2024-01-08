@@ -22,7 +22,7 @@
       </div>
       <div class="col-md-6 col-lg-3">
         <h5 class="text-white mb-4">Get In Touch</h5>
-        <p><i class="fa fa-map-marker-alt me-3"></i>Vavuniya, Sri Lanka</p>
+        <p><i class="fa fa-map-marker-alt me-3"></i>Matugama, Sri Lanka</p>
         <p><i class="fa fa-phone-alt me-3"></i>011 999 9999</p>
         <p><i class="fa fa-envelope me-3"></i>applemobiles@gmail.com</p>
         <div class="d-flex pt-2">
