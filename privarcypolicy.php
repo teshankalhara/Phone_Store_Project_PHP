@@ -27,6 +27,19 @@ session_start();
     <!--content-->
     <div class="container container-fluid p-5">
         <h2>Privacy Policy Page</h2>
+        <div class="border m-2 p-2">
+            <b>1. Information We Collect:</b><br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, nam eius accusamus delectus enim nesciunt laborum temporibus. Inventore dolores quod, magni blanditiis suscipit maiores beatae architecto sed saepe velit nihil.
+        </div><div class="border m-2 p-2">
+            <b>2. How We Use Your Information:</b><br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, nam eius accusamus delectus enim nesciunt laborum temporibus. Inventore dolores quod, magni blanditiis suscipit maiores beatae architecto sed saepe velit nihil.
+        </div><div class="border m-2 p-2">
+            <b>3. Information Sharing:</b><br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, nam eius accusamus delectus enim nesciunt laborum temporibus. Inventore dolores quod, magni blanditiis suscipit maiores beatae architecto sed saepe velit nihil.
+        </div><div class="border m-2 p-2">
+            <b>4. Your Choices:</b><br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, nam eius accusamus delectus enim nesciunt laborum temporibus. Inventore dolores quod, magni blanditiis suscipit maiores beatae architecto sed saepe velit nihil.
+        </div>
     </div>
     <!--content-->
 
