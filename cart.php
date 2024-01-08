@@ -52,28 +52,6 @@ if (!isset($_SESSION['uid'])) {
                         Cart
                         <span class="badge" style='font-size:medium;'>2</span>
                     </a>
-                    <!--
-                    <div class="dropdown-menu mt-1 p-3 bg-dark border-2 border-white mt-3" style="width: 400px;">
-                        <div class="panel panel-success">
-                            <div class="panel-heading">
-                                <div class="row text-white">
-                                    <div class="col-md-3"><strong>S. No.</strong></div>
-                                    <div class="col-md-3"><strong>Product Image</strong></div>
-                                    <div class="col-md-3"><strong>Product Name</strong></div>
-                                    <div class="col-md-3"><strong>Price in LKR</strong></div>
-                                </div>
-                                <hr>
-                                <div class="text-white-50" id="cartmenu">
-                                    <?php
-                                    #adding items on cart
-                                    ?>
-                                </div>
-                            </div>
-                            <div class="panel-body"></div>
-                            <div class="panel-footer"></div>
-                        </div>
-                    </div>
-                    -->
                 </div>
 
                 <div class="text-center ml-2">
