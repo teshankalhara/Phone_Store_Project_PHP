@@ -22,15 +22,14 @@
       </div>
       <div class="col-md-6 col-lg-3">
         <h5 class="text-white mb-4">Get In Touch</h5>
-        <p><i class="fa fa-map-marker-alt me-3"></i>California, USA</p>
-        <p><i class="fa fa-phone-alt me-3"></i>+099 999 99999</p>
+        <p><i class="fa fa-map-marker-alt me-3"></i>Vavuniya, Sri Lanka</p>
+        <p><i class="fa fa-phone-alt me-3"></i>011 999 9999</p>
         <p><i class="fa fa-envelope me-3"></i>applemobiles@gmail.com</p>
         <div class="d-flex pt-2">
-          <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
-          <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
-          <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
-          <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-instagram"></i></a>
-          <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+          <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-facebook-f"></i></a>
+          <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-whatsapp"></i></a>
+          <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-youtube"></i></a>
+          <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-instagram"></i></a>
         </div>
       </div>
       <div class="col-md-6 col-lg-3">
