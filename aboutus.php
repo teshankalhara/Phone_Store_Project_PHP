@@ -27,6 +27,22 @@ session_start();
     <!--content-->
     <div class="container container-fluid p-5">
         <h2>About Us Page</h2>
+        <p>
+            Welcome to Apple.Mobiles, where cutting-edge technology meets unbeatable deals!
+            We are your go-to destination for all things mobile,
+            bringing you the latest smartphones at prices that will make your wallet smile.
+            At Apple.Mobiles, we believe in providing a seamless shopping experience,
+            ensuring that you stay connected to innovation without breaking the bank.
+            Explore our curated selection of top-tier mobile phones and discover a world of possibilities
+            right at your fingertips. Welcome to a smarter, more connected
+            future with Apple.Mobiles—where your next mobile upgrade is just a click away!
+        </p>
+    </div>
+    <div class="container container-fluid p-5">
+        <h2>Our Team</h2>
+        <p>
+            This is Team Members
+        </p>
     </div>
     <!--content-->
 
