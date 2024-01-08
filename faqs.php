@@ -10,7 +10,7 @@ session_start();
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
     <link rel="icon" type="image/x-icon" href="pic/logo.jpg">
-    
+
     <title>Apple.Mobiles</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -26,7 +26,22 @@ session_start();
 
     <!--content-->
     <div class="container container-fluid p-5">
-        <h2>FAQS Page</h2>
+        <h2>FAQs Page</h2>
+        <div class="border m-2 p-2">
+            <b>How to use?</b><br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, nam eius accusamus delectus enim nesciunt laborum temporibus. Inventore dolores quod, magni blanditiis suscipit maiores beatae architecto sed saepe velit nihil.
+        </div>
+        <div class="border m-2 p-2">
+            <b>How to use cart?</b><br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus nobis, at cupiditate excepturi ex quae in ut quidem dolor necessitatibus recusandae, nostrum, itaque eligendi numquam dicta exercitationem quas explicabo eius.
+        </div>
+        <div class="border m-2 p-2">
+            <b>How to use cart?</b><br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus nobis, at cupiditate excepturi ex quae in ut quidem dolor necessitatibus recusandae, nostrum, itaque eligendi numquam dicta exercitationem quas explicabo eius.
+        </div>
+        <div class="m-3 text">
+            <b>Contact Us - applemobile@gmail.com</b>
+        </div>
     </div>
     <!--content-->
 
