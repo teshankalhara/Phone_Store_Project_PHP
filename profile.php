@@ -21,7 +21,6 @@ if (!isset($_SESSION['uid'])) {
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/body.css" rel="stylesheet">
-    <link href="css/body.css" rel="stylesheet">
 
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 </head>
