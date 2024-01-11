@@ -100,7 +100,6 @@
         }
         ?>
         <!-- login or signup-->
-
       </ul>
     </div>
   </div>
