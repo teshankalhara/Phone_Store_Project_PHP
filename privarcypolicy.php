@@ -1,5 +1,6 @@
 <?php
 session_start();
+$searchBar = 'false';
 ?>
 
 <!DOCTYPE html>
