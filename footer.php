@@ -21,7 +21,7 @@
         </p>
       </div>
       <div class="col-md-6 col-lg-3">
-        <h5 class="text-white mb-4">Get In Touch</h5>
+        <h5 class="text-white mb-4">Contact Us</h5>
         <p><i class="fa fa-map-marker-alt me-3"></i>Matugama, Sri Lanka</p>
         <p><i class="fa fa-phone-alt me-3"></i>011 999 9999</p>
         <p><i class="fa fa-envelope me-3"></i>applemobiles@gmail.com</p>
@@ -53,11 +53,11 @@
   <div class="container">
     <div class="copyright">
       <div class="row">
-        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+        <div class="col-md-7 text-center text-md-start mb-3 mb-md-0">
           Copyright &copy; 2024 <a class="border-bottom" href="#">Apple.Mobiles</a>. All rights reserved.
-          Designed By <a class="border-bottom" href="#">Apple Mobiles</a>
+          WebSite Designed By <a class="border-bottom" href="#">Teshan Kalhara</a>
         </div>
-        <div class="col-md-6 text-center text-md-end">
+        <div class="col-md-5 text-center text-md-end">
           <div class="footer-menu">
             <a href="">Home</a>
             <a href="">Products</a>
@@ -68,7 +68,6 @@
   </div>
 </div>
 <!-- Footer End -->
-
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
