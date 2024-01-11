@@ -1,5 +1,6 @@
 <?php
 session_start();
+$searchBar = 'false';
 ?>
 
 <!DOCTYPE html>
@@ -41,7 +42,7 @@ session_start();
     <div class="container container-fluid p-5">
         <h2>Our Team</h2>
         <p>
-            This is Team Members
+            Our Team Members
         </p>
     </div>
     <!--content-->
