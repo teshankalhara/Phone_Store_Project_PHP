@@ -1,4 +1,5 @@
 <?php
+$searchBar = 'true';
 session_start();
 if (isset($_SESSION['uid'])) {
     header('location:profile.php');
@@ -29,54 +30,7 @@ if (isset($_SESSION['uid'])) {
 
 <body>
     <!--header-->
-    <header class="p-3 bg-dark sticky-top mb-3">
-        <div class="container container-fluid">
-            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start ml-4">
-                <a href="index.php" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none ml-4 mr-4">
-                    <b>Apple.Mobiles</b>
-                </a>
-
-                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0 mr-4 ml-4">
-                    <li class="mr-4"><a href="index.php" class="nav-link px-2 text-white">Home</a></li>
-                    <li class="mr-4"><a href="services.php" class="nav-link px-2 text-white">Service</a></li>
-                    <li class="mr-4"><a href="aboutus.php" class="nav-link px-2 text-white">About</a></li>
-                    <li class="mr-4"><a href="faqs.php" class="nav-link px-2 text-white">FAQs</a></li>
-                    <li class="ml-2 bg-dark" style="width:250px;"><input type="text" class="form-control bg-dark text-white-50" id="search" name="" placeholder="Type to search..." style="border-top-left-radius: 10px; border-bottom-left-radius: 10px; border-top-right-radius: 0px;border-bottom-right-radius: 0px; border:1px solid #3B71CA; font-size:medium;"></li>
-                    <li style="top:10px;"><button class="btn btn-outline-primary" id="search_btn" name="search" style="border-top-left-radius: 0px;border-bottom-left-radius: 0px;"><i class="fa fa-search"></i></button></li>
-                </ul>
-                <!--login form-->
-                <div class="text-end ml-lg-4">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sign In</a>
-                    <div class="dropdown-menu bg-dark border-1 border-white mt-3">
-                        <div>
-                            <div class="panel panel-primary m-2 p-1">
-                                <div class="panel-heading text-center text-info mb-1">
-                                    <h3>Login</h3>
-                                </div>
-                                <div class="panel-heading text-center p-2">
-                                    <input type="email" class="form-control m-1" id="email" placeholder="Email">
-                                    <input type="password" class="form-control m-1" id="password" placeholder="Password">
-                                    <p><br></p>
-                                    <input type="submit" class="btn btn-outline-primary mb-1" id="login" value="Login" name="userLogin">
-                                    <div>
-                                        <!--<a href="#">Forgot Password?</a>-->
-                                    </div>
-                                </div>
-                                <div class="panel-footer" id="e_msg"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--login form-->
-
-                <!--signup form-->
-                <div class="text-end ml-lg-2">
-                    <a href="signup.php"><button type="button" class="btn btn-outline-primary ml-lg-4">Sign-up</button></a>
-                </div>
-                <!--signup form-->
-            </div>
-        </div>
-    </header>
+    <?php require_once('header.php'); ?>
     <!--header-->
 
     <!--content-->
