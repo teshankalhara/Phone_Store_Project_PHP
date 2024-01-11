@@ -1,6 +1,7 @@
 <?php
 session_start();
 $searchBar = 'false';
+$activePage = 'about';
 ?>
 
 <!DOCTYPE html>
