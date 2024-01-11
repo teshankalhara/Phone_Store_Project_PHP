@@ -50,7 +50,7 @@ if (!isset($_SESSION['uid'])) {
                     <a id="carticon" href="#">
                         <i class="fa fa-shopping-cart"></i>
                         Cart
-                        <span class="badge" style='font-size:medium;'>2</span>
+                        <span class="badge" style='font-size:medium;'>&nbsp;</span>
                     </a>
                 </div>
 
