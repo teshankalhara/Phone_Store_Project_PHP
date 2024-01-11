@@ -6,9 +6,9 @@ if (isset($_POST["category"])) {
     $category_query = "SELECT * FROM categories";
     $run_query = mysqli_query($conn, $category_query);
 
-    echo "<div class='nav flex-column nav-pills'>";
+    echo "<div class='nav flex-column nav-pills mt-2'>";
         echo "<li class='nav-item'>
-                <a class='nav-link active' href='#'><h4>Categories</h4></a>
+                <a class='nav-link active mb-1' href='#'><h4>Categories</h4></a>
             </li>";
 
         if (mysqli_num_rows($run_query)) {
@@ -28,9 +28,9 @@ if (isset($_POST["brand"])) {
     $category_query = "SELECT * FROM brands";
     $run_query = mysqli_query($conn, $category_query);
 
-    echo "<div class='nav flex-column nav-pills'>";
+    echo "<div class='nav flex-column nav-pills mt-3'>";
     echo "<li class='nav-item'>
-            <a class='nav-link active' href='#'><h4>Brands</h4></a>
+            <a class='nav-link active mb-1' href='#'><h4>Brands</h4></a>
         </li>";
 
     if (mysqli_num_rows($run_query)) {
