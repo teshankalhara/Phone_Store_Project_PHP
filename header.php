@@ -88,7 +88,7 @@
                               Cart
                           </a>
                       </div>
-                      <div><a href='#'>Change Password</a></div>
+                      <div><a href='changepassword.php'>Change Password</a></div>
                       <div class='text-center'>
                           <a href='logout.php'>
                               <button type='button' class='btn btn-outline-danger m-2'><b>Logout</b></button>
